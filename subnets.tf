@@ -22,7 +22,6 @@ resource "aws_subnet" "subnet" {
       ])
       subnet_type = var.subnet_type
     },
-    module.utils.default_tags,
     coalesce(var.extra_tags, {})
   )
 

@@ -1,7 +1,3 @@
-module "utils" {
-  source = "../../utils"
-}
-
 module "aws_utils" {
-  source = "../utils"
+  source = "github.com/dan-drew/terraform-aws-base"
 }
